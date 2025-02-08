@@ -1,0 +1,50 @@
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+venv/
+env/
+.virtualenv/
+
+# Configuración de entorno y dependencias
+*.env
+*.venv
+Pipfile
+Pipfile.lock
+poetry.lock
+
+# Archivos de compilación y distribución
+build/
+dist/
+*.egg-info/
+*.egg
+*.whl
+
+# Logs y cachés
+logs/
+*.log
+*.sqlite3
+*.db
+
+# Configuración de IDEs y editores
+.vscode/
+.idea/
+*.iml
+
+# Archivos de pruebas y cobertura
+.coverage
+htmlcov/
+pytest_cache/
+
+# Archivos de Docker
+docker-compose.override.yml
+
+# Configuración de Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Archivos específicos de Windows/macOS/Linux
+.DS_Store
+Thumbs.db
+*.swp
