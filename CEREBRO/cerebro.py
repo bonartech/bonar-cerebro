@@ -4,11 +4,63 @@ import pickle
 import os
 import unicodedata
 
+import numpy as np
+import networkx as nx
+import spektral
+import tensorflow as tf
+
+from GNN.model import GrafoNeuronal
 # Cargar modelo de lenguaje con embeddings semánticos y lematización
 nlp = spacy.load("es_core_news_md")
 
 # Nombre del archivo donde se guardará el grafo
 GRAFO_FILENAME = "grafo_cerebro.pkl"
+
+
+
+def convertir_grafo_para_gnn():
+    """Convierte el grafo de NetworkX a un formato compatible con Spektral (TensorFlow)"""
+    global grafo
+
+    # Asignar IDs numéricos a cada nodo
+    nodos = list(grafo.nodes)
+    nodo_a_idx = {nodo: idx for idx, nodo in enumerate(nodos)}
+
+    # Crear matriz de adyacencia y atributos de nodos
+    A = nx.to_numpy_array(grafo, nodelist=nodos)  # Matriz de adyacencia
+    X = np.array([nlp(nodo).vector for nodo in nodos])  # Embeddings de nodos con spaCy
+
+    # Convertir a formato TensorFlow
+    A = tf.convert_to_tensor(A, dtype=tf.float32)
+    X = tf.convert_to_tensor(X, dtype=tf.float32)
+
+    print("✅ Grafo convertido para TensorFlow y Spektral")
+    return A, X, nodo_a_idx
+
+def entrenar_gnn(A, X, epochs=50, lr=0.01):
+    modelo = GrafoNeuronal(input_dim=X.shape[1], hidden_dim=32)
+    modelo.compile(optimizer=tf.keras.optimizers.Adam(lr), loss="mse")
+
+    for epoch in range(epochs):
+        loss = modelo.train_on_batch([X, A], A)  # Aprender conexiones
+        if epoch % 10 == 0:
+            print(f"🔄 Epoch {epoch}/{epochs} - Pérdida: {loss:.4f}")
+
+    print("✅ GNN entrenada con éxito")
+    return modelo
+
+def predecir_nueva_conexion(modelo, nodo1, nodo2, A, X, nodo_a_idx):
+    """Usa la GNN para predecir la fuerza de conexión entre dos nodos"""
+    if nodo1 not in nodo_a_idx or nodo2 not in nodo_a_idx:
+        return f"⚠️ '{nodo1}' o '{nodo2}' no existen en el grafo."
+
+    idx1, idx2 = nodo_a_idx[nodo1], nodo_a_idx[nodo2]
+
+    emb1, emb2 = modelo([X, A])[idx1], modelo([X, A])[idx2]
+    distancia = np.linalg.norm(emb1.numpy() - emb2.numpy())
+
+    return f"🔮 Predicción de relación '{nodo1}' ↔ '{nodo2}': {1 / (1 + distancia):.4f}"
+
 
 def normalizar_texto(texto):
     """Convierte el texto a minúsculas, elimina tildes y caracteres especiales."""

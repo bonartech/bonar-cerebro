@@ -1,4 +1,4 @@
-from cerebro import encadenamiento_de_pensamiento, mostrar_grafo, procesar_texto_y_construir_grafo
+from CEREBRO.cerebro import encadenamiento_de_pensamiento, mostrar_grafo, procesar_texto_y_construir_grafo
 
 print('test el leon es un mamifero grande')
 procesar_texto_y_construir_grafo("El león es un mamífero grande.")
