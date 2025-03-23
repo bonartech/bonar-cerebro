@@ -1,0 +1,113 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "tipo": "concepto",
+            "id": "helado"
+        },
+        {
+            "tipo": "concepto",
+            "id": "alimento"
+        },
+        {
+            "tipo": "concepto",
+            "id": "humano"
+        },
+        {
+            "tipo": "concepto",
+            "id": "hecho"
+        },
+        {
+            "tipo": "concepto",
+            "id": "base"
+        },
+        {
+            "tipo": "concepto",
+            "id": "hielo"
+        },
+        {
+            "tipo": "concepto",
+            "id": "leche"
+        },
+        {
+            "tipo": "concepto",
+            "id": "parte"
+        },
+        {
+            "tipo": "concepto",
+            "id": "fabricante"
+        },
+        {
+            "tipo": "concepto",
+            "id": "ser"
+        },
+        {
+            "tipo": "concepto",
+            "id": "agua"
+        }
+    ],
+    "links": [
+        {
+            "peso": 2.5,
+            "source": "helado",
+            "target": "alimento"
+        },
+        {
+            "peso": 1.0,
+            "source": "helado",
+            "target": "hecho"
+        },
+        {
+            "peso": 1.0,
+            "source": "alimento",
+            "target": "humano"
+        },
+        {
+            "peso": 1.5,
+            "source": "alimento",
+            "target": "ser"
+        },
+        {
+            "peso": 2.5,
+            "source": "hecho",
+            "target": "base"
+        },
+        {
+            "peso": 1.5,
+            "source": "hecho",
+            "target": "ser"
+        },
+        {
+            "peso": 2.5,
+            "source": "base",
+            "target": "hielo"
+        },
+        {
+            "peso": 1.0,
+            "source": "hielo",
+            "target": "leche"
+        },
+        {
+            "peso": 1.5,
+            "source": "hielo",
+            "target": "agua"
+        },
+        {
+            "peso": 1.0,
+            "source": "leche",
+            "target": "parte"
+        },
+        {
+            "peso": 1.0,
+            "source": "parte",
+            "target": "fabricante"
+        },
+        {
+            "peso": 1.5,
+            "source": "fabricante",
+            "target": "agua"
+        }
+    ]
+}

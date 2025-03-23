@@ -1,0 +1,20 @@
+{
+    "helado": {
+        "aprendizaje": 2.0
+    },
+    "helado alimento ser hecho base hielo agua fabricante": {
+        "aprendizaje": 1.0
+    },
+    "el helado es un alimento que consumen los humanos": {
+        "aprendizaje": 1.0
+    },
+    "el helado esta hecho en base a hielo o leche en gran parte, dependiendo de su fabricante": {
+        "aprendizaje": 1.0
+    },
+    "el helado es un alimento que consumen los seres humanos, esta hecho a base de hielo o agua dependiendo de su fabricante": {
+        "aprendizaje": 1.0
+    },
+    "el fuego sirve para quemar , es un combustible": {
+        "aprendizaje": 1.0
+    }
+}

@@ -1,0 +1,42 @@
+CEREBRO/
+│── core/                         # 🔥 Núcleo Central: Procesamiento y Razonamiento  
+│   │── 📜 reasoning.py           # Procesamiento lógico y toma de decisiones  
+│   │── 📜 memory_manager.py      # Gestión del acceso y almacenamiento en memoria  
+│   │── 📜 consciousness_engine.py # Evaluación de conciencia y autoaprendizaje  
+│   │── 📜 feedback_loop.py        # Mecanismo de ajuste de comportamiento  
+│  
+│── knowledge/                     # 📚 Módulo de Grafos de Información  
+│   │── 📜 concept_graph.py        # Grafo de memoria y conceptos  
+│   │── 📜 consciousness_graph.py  # Grafo de conciencia y autoreconocimiento  
+│   │── 📜 knowledge_updater.py    # Mecanismo de aprendizaje y actualización  
+│  
+│── learning/                       # 📈 Aprendizaje y Evolución  
+│   │── 📜 gnn_model.py             # Graph Neural Networks (GNNs) para mejorar el grafo  
+│   │── 📜 reinforcement_learning.py # Ajuste de comportamiento con RL  
+│   │── 📜 predictor.py             # Predicción de conexiones no existentes en el grafo  
+│  
+│── externalities/                   # 🌍 Externalidades: Sensores y Comunicación  
+│   │── 📜 nlp_engine.py            # Procesamiento de lenguaje natural (NLP)  
+│   │── 📜 vision_module.py         # Módulo de visión artificial (futuro)  
+│   │── 📜 sensor_interface.py      # Interfaz con sensores físicos (futuro)  
+│   │── 📜 api_connector.py         # Integración con APIs externas  
+│  
+│── data/                            # 📦 Almacenamiento de Datos  
+│   │── 📜 graph_storage.py         # Persistencia de los grafos  
+│   │── 📜 memory_storage.py        # Registro de recuerdos y experiencias previas  
+│   │── 📜 logs/                    # Historial de interacciones y feedback  
+│  
+│── config/                          # ⚙️ Configuración y Parámetros  
+│   │── 📜 settings.py               # Configuración general del sistema  
+│   │── 📜 hyperparameters.py        # Parámetros de entrenamiento de las GNN y RL  
+│  
+│── tests/                           # 🛠️ Pruebas Unitarias y de Integración  
+│   │── 📜 test_reasoning.py         # Pruebas del módulo de razonamiento  
+│   │── 📜 test_memory.py            # Pruebas del módulo de memoria  
+│   │── 📜 test_graph.py             # Pruebas de la estructura de grafos  
+│   │── 📜 test_learning.py          # Pruebas de aprendizaje y predicción  
+│  
+│── main.py                          # 🎯 Punto de entrada del sistema  
+│── README.md                        # 📖 Documentación del proyecto  
+│── requirements.txt                  # 📦 Dependencias del proyecto  
+│── .gitignore                        # 🚫 Archivos ignorados en control de versiones  

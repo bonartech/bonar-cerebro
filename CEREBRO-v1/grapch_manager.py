@@ -5,17 +5,22 @@ import pickle
 GRAFO_FILENAME = "data/grafo_cerebro.pkl"
 
 def cargar_grafo():
-    """Carga el grafo desde un archivo si existe, de lo contrario, crea uno nuevo."""
+    """Carga el grafo desde un archivo si existe y lo devuelve."""
+    global grafo
     if os.path.exists(GRAFO_FILENAME):
         try:
             with open(GRAFO_FILENAME, "rb") as f:
                 grafo = pickle.load(f)
             print("📂 Grafo cargado con éxito.")
-            return grafo
         except (EOFError, pickle.UnpicklingError):
-            print("⚠️ Archivo corrupto. Creando un nuevo grafo.")
-    print("⚠️ No se encontró un grafo previo. Creando uno nuevo.")
-    return nx.Graph()
+            print("⚠️ Archivo del grafo vacío o corrupto. Creando un nuevo grafo.")
+            grafo = nx.Graph()
+    else:
+        print("⚠️ No se encontró un grafo previo. Creando uno nuevo.")
+        grafo = nx.Graph()
+    
+    return grafo  # ✅ Ahora `cargar_grafo()` devuelve el grafo
+
 
 def guardar_grafo(grafo):
     """Guarda el grafo en un archivo para persistencia."""

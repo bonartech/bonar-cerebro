@@ -1,0 +1,18 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "tipo": "atributo",
+            "valor": "CEREBRO - IA basada en conciencia y razonamiento",
+            "id": "identidad"
+        },
+        {
+            "tipo": "decisi\u00f3n",
+            "impacto": 1.0,
+            "id": "el fuego sirve para quemar , es un combustible"
+        }
+    ],
+    "links": []
+}
