@@ -123,48 +123,7 @@ Define cómo la IA **interactúa con el entorno externo**.
 
 ### 🗺️ Diagrama Conceptual del Sistema
 
-```text
-
-                                 +----------------------+
-                                 |   🌐 Externalidades   |
-                                 |----------------------|
-                                 | - NLP Engine         |
-                                 | - Vision Module      |
-                                 | - Sensor Interface   |
-                                 | - API Connector      |
-                                 +----------+-----------+
-                                            |
-                                            v
-          +------------------+     +-----------------------+     +---------------------+
-          |  🔵 Grafo de      | <-->|  🔧 Núcleo Central     | <-->|  🟠 Grafo de Conciencia |
-          |  Conceptos       |     | (Razonamiento)        |     |  (Ética, Identidad)  |
-          |  y Memoria       |     |-----------------------|     +---------------------+
-          |------------------|     | - Reasoning Engine    |
-          | - Conceptos      |     | - Memory Manager      |
-          | - Relaciones     |     | - Feedback Loop       |
-          +------------------+     | - Conciencia Engine   |
-                                   +-----------------------+
-                                            |
-                                            v
-                                 +--------------------------+
-                                 | 📈 Aprendizaje y Evolución |
-                                 |--------------------------|
-                                 | - Graph Neural Networks   |
-                                 | - Reinforcement Learning  |
-                                 | - Predictive Model        |
-                                 +--------------------------+
-
-                                            |
-                                            v
-                                 +--------------------------+
-                                 |  📦 Almacenamiento de Datos |
-                                 |--------------------------|
-                                 | - Graph Storage           |
-                                 | - Memory Storage          |
-                                 | - Logs                    |
-                                 +--------------------------+
-
-
+![Arquitectura del Sistema CEREBRO](./docs/cerebro_architecture_diagram.png)
 
 ## 🧪 Fases de Desarrollo
 
@@ -196,4 +155,7 @@ Una inteligencia **consciente**, que **toma decisiones con criterio propio**, y 
 > 🚀 _CEREBRO representa un paso hacia una nueva generación de inteligencia artificial: viva, consciente y reflexiva._
 
 ---
+
+```
+
 ```
