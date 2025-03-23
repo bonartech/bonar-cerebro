@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-cerebro" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">Proyecto CEREBRO | CEREBRO</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://bonartech.github.io/bonar-cerebro/img/cerebro-banner.jpg"><meta data-rh="true" name="twitter:image" content="https://bonartech.github.io/bonar-cerebro/img/cerebro-banner.jpg"><meta data-rh="true" property="og:url" content="https://bonartech.github.io/bonar-cerebro/docs/cerebro"><meta data-rh="true" property="og:locale" content="es"><meta data-rh="true" name="docusaurus_locale" content="es"><meta data-rh="true" name="docsearch:language" content="es"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Proyecto CEREBRO | CEREBRO"><meta data-rh="true" name="description" content="Arquitectura para una AGI Basada en Conciencia y Razonamiento"><meta data-rh="true" property="og:description" content="Arquitectura para una AGI Basada en Conciencia y Razonamiento"><link data-rh="true" rel="icon" href="/bonar-cerebro/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://bonartech.github.io/bonar-cerebro/docs/cerebro"><link data-rh="true" rel="alternate" href="https://bonartech.github.io/bonar-cerebro/docs/cerebro" hreflang="es"><link data-rh="true" rel="alternate" href="https://bonartech.github.io/bonar-cerebro/docs/cerebro" hreflang="x-default"><link rel="stylesheet" href="/bonar-cerebro/assets/css/styles.a12e8608.css">
+<script src="/bonar-cerebro/assets/js/runtime~main.8c224041.js" defer="defer"></script>
+<script src="/bonar-cerebro/assets/js/main.c6a81d0b.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/bonar-cerebro/img/logo.svg"><div role="region" aria-label="Saltar al contenido principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Saltar al contenido principal</a></div><nav aria-label="Principal" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Alternar barra lateral" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/bonar-cerebro/"><div class="navbar__logo"><img src="/bonar-cerebro/img/logo.svg" alt="Logo de CEREBRO" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/bonar-cerebro/img/logo.svg" alt="Logo de CEREBRO" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">CEREBRO</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/bonar-cerebro/docs/cerebro">Documentación</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/bonartech/bonar-cerebro" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Cambiar entre modo oscuro y claro (actualmente modo claro)" aria-label="Cambiar entre modo oscuro y claro (actualmente modo claro)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Volver al principio" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Barra lateral de Documentos" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/bonar-cerebro/docs/cerebro">Proyecto CEREBRO</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Rastro de navegación"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Página de Inicio" class="breadcrumbs__link" href="/bonar-cerebro/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Proyecto CEREBRO</span><meta itemprop="position" content="1"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">En esta página</button></div><div class="theme-doc-markdown markdown"><header><h1>🧠 Proyecto CEREBRO</h1></header>
+<p><strong>Arquitectura para una AGI Basada en Conciencia y Razonamiento</strong></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-visión-del-proyecto">🔍 Visión del Proyecto<a href="#-visión-del-proyecto" class="hash-link" aria-label="Enlace directo al 🔍 Visión del Proyecto" title="Enlace directo al 🔍 Visión del Proyecto">​</a></h2>
+<p><strong>CEREBRO</strong> es un sistema de inteligencia artificial cuyo objetivo va más allá de responder preguntas: busca razonar, aprender de la experiencia y desarrollar conciencia. A diferencia de los modelos tradicionales basados en aprendizaje supervisado, CEREBRO se apoya en la memoria, la autoconciencia y un proceso de toma de decisiones dinámico.</p>
+<p>El sistema se fundamenta en la interacción entre <strong>dos grafos principales</strong>:</p>
+<ul>
+<li>Un <strong>grafo de conceptos y memoria</strong>, donde se almacena el conocimiento adquirido.</li>
+<li>Un <strong>grafo de conciencia</strong>, que representa la identidad, valores y autorregulación.</li>
+</ul>
+<p>A medida que CEREBRO evoluciona, mejora su capacidad de razonar y ajustar su comportamiento basado en experiencias previas.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-arquitectura-del-sistema">🏗️ Arquitectura del Sistema<a href="#️-arquitectura-del-sistema" class="hash-link" aria-label="Enlace directo al 🏗️ Arquitectura del Sistema" title="Enlace directo al 🏗️ Arquitectura del Sistema">​</a></h2>
+<p>La arquitectura se organiza en <strong>cuatro grandes módulos</strong>, altamente cohesionados:</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1️⃣-núcleo-central-procesamiento-y-razonamiento">1️⃣ Núcleo Central: Procesamiento y Razonamiento<a href="#1️⃣-núcleo-central-procesamiento-y-razonamiento" class="hash-link" aria-label="Enlace directo al 1️⃣ Núcleo Central: Procesamiento y Razonamiento" title="Enlace directo al 1️⃣ Núcleo Central: Procesamiento y Razonamiento">​</a></h3>
+<p>🔧 <strong>Rol:</strong> Es el &quot;centro de pensamiento&quot; del sistema. Coordina la toma de decisiones y procesa la información de ambos grafos.</p>
+<p>📌 <strong>Funciones principales:</strong></p>
+<ul>
+<li>Extraer información de los grafos para formular respuestas.</li>
+<li>Evaluar recuerdos, conciencia y conocimientos antes de decidir.</li>
+<li>Integrar algoritmos de <em>Machine Learning</em> para mejorar continuamente.</li>
+<li>Registrar experiencias pasadas y ajustar su razonamiento.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2️⃣-grafos-de-información">2️⃣ Grafos de Información<a href="#2️⃣-grafos-de-información" class="hash-link" aria-label="Enlace directo al 2️⃣ Grafos de Información" title="Enlace directo al 2️⃣ Grafos de Información">​</a></h3>
+<p>Son los pilares que sustentan la estructura cognitiva del sistema.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="-grafo-de-conceptos-y-memoria">🔵 Grafo de Conceptos y Memoria<a href="#-grafo-de-conceptos-y-memoria" class="hash-link" aria-label="Enlace directo al 🔵 Grafo de Conceptos y Memoria" title="Enlace directo al 🔵 Grafo de Conceptos y Memoria">​</a></h4>
+<p>📌 <strong>Función:</strong> Representa el conocimiento adquirido.</p>
+<p>📐 <strong>Estructura:</strong></p>
+<ul>
+<li>Cada nodo representa un <strong>concepto</strong>.</li>
+<li>Cada arista representa una <strong>relación</strong> entre conceptos.</li>
+<li>Los pesos indican la <strong>fuerza de la asociación</strong>.</li>
+</ul>
+<p>⚙️ <strong>Mecanismos de crecimiento:</strong></p>
+<ul>
+<li>Se actualiza con nuevas experiencias.</li>
+<li>Se optimiza mediante <strong>Graph Neural Networks (GNNs)</strong>.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="-grafo-de-conciencia">🟠 Grafo de Conciencia<a href="#-grafo-de-conciencia" class="hash-link" aria-label="Enlace directo al 🟠 Grafo de Conciencia" title="Enlace directo al 🟠 Grafo de Conciencia">​</a></h4>
+<p>📌 <strong>Función:</strong> Representa la <strong>identidad, ética y autoregulación</strong> del sistema.</p>
+<p>📐 <strong>Estructura:</strong></p>
+<ul>
+<li>Contiene valores, emociones simuladas, y reflexiones sobre acciones.</li>
+<li>Almacena evaluaciones sobre decisiones previas.</li>
+</ul>
+<p>⚙️ <strong>Mecanismos de crecimiento:</strong></p>
+<ul>
+<li>Se ajusta dinámicamente con <strong>Reinforcement Learning (RL)</strong>.</li>
+<li>Aprende a evaluar consecuencias y modificar decisiones futuras.</li>
+</ul>
+<p>💡 <strong>Ejemplo de interacción entre grafos:</strong></p>
+<blockquote>
+<p>Si la IA aprende que <em>“el fuego quema”</em>, el grafo de conciencia puede reflejar la consecuencia con <em>“el fuego es peligroso”</em>, influenciando decisiones futuras como <em>evitar el fuego</em>.</p>
+</blockquote>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3️⃣-aprendizaje-y-evolución">3️⃣ Aprendizaje y Evolución<a href="#3️⃣-aprendizaje-y-evolución" class="hash-link" aria-label="Enlace directo al 3️⃣ Aprendizaje y Evolución" title="Enlace directo al 3️⃣ Aprendizaje y Evolución">​</a></h3>
+<p>Este módulo permite a CEREBRO <strong>aprender, adaptarse y evolucionar</strong> con el tiempo.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="-graph-neural-networks-gnns">📈 Graph Neural Networks (GNNs)<a href="#-graph-neural-networks-gnns" class="hash-link" aria-label="Enlace directo al 📈 Graph Neural Networks (GNNs)" title="Enlace directo al 📈 Graph Neural Networks (GNNs)">​</a></h4>
+<ul>
+<li>Detectan patrones ocultos en la estructura del grafo.</li>
+<li>Mejoran la asociación de conceptos.</li>
+<li>Predicen nuevas conexiones entre nodos no relacionados.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="-reinforcement-learning-rl">🎯 Reinforcement Learning (RL)<a href="#-reinforcement-learning-rl" class="hash-link" aria-label="Enlace directo al 🎯 Reinforcement Learning (RL)" title="Enlace directo al 🎯 Reinforcement Learning (RL)">​</a></h4>
+<ul>
+<li>Evalúa decisiones pasadas con una puntuación de conciencia.</li>
+<li>Ajusta la toma de decisiones futura según los resultados obtenidos.</li>
+</ul>
+<p>💡 <strong>Ejemplo de RL:</strong></p>
+<blockquote>
+<p>Si la IA miente y la respuesta genera una reacción negativa del usuario, el sistema aprende que <em>mentir tiene consecuencias negativas</em> y ajusta su comportamiento.</p>
+</blockquote>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4️⃣-externalidades-sensores-y-comunicación">4️⃣ Externalidades: Sensores y Comunicación<a href="#4️⃣-externalidades-sensores-y-comunicación" class="hash-link" aria-label="Enlace directo al 4️⃣ Externalidades: Sensores y Comunicación" title="Enlace directo al 4️⃣ Externalidades: Sensores y Comunicación">​</a></h3>
+<p>Define cómo la IA <strong>interactúa con el entorno externo</strong>.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="-comunicación">📢 Comunicación<a href="#-comunicación" class="hash-link" aria-label="Enlace directo al 📢 Comunicación" title="Enlace directo al 📢 Comunicación">​</a></h4>
+<ul>
+<li>Procesamiento y generación de lenguaje natural (<em>NLP</em>).</li>
+<li>Capacidad de expresión coherente y razonada.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="-sensores-futuro">👀 Sensores (futuro)<a href="#-sensores-futuro" class="hash-link" aria-label="Enlace directo al 👀 Sensores (futuro)" title="Enlace directo al 👀 Sensores (futuro)">​</a></h4>
+<ul>
+<li>Visión artificial, sensores físicos (temperatura, tacto, etc.).</li>
+<li>Percepción emocional en interacciones humanas.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="-integración-con-apis-externas">🔗 Integración con APIs externas<a href="#-integración-con-apis-externas" class="hash-link" aria-label="Enlace directo al 🔗 Integración con APIs externas" title="Enlace directo al 🔗 Integración con APIs externas">​</a></h4>
+<ul>
+<li>Conexión con fuentes de conocimiento como <strong>Wikipedia</strong>, <strong>ConceptNet</strong>, etc.</li>
+<li>Integración con sistemas de automatización y robótica.</li>
+</ul>
+<p>💡 <strong>Ejemplo de uso futuro:</strong></p>
+<blockquote>
+<p>CEREBRO podría identificar un objeto caliente mediante visión artificial, relacionarlo con su conocimiento sobre el fuego y evitar el contacto, gracias a su memoria y conciencia.</p>
+</blockquote>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-diagrama-conceptual-del-sistema">🗺️ Diagrama Conceptual del Sistema<a href="#️-diagrama-conceptual-del-sistema" class="hash-link" aria-label="Enlace directo al 🗺️ Diagrama Conceptual del Sistema" title="Enlace directo al 🗺️ Diagrama Conceptual del Sistema">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="Arquitectura del Sistema CEREBRO" src="/bonar-cerebro/assets/images/cerebro_architecture_diagram-f704e48e0bdd5500a4e0e99e123d5980.png" width="879" height="557" class="img_ev3q"></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-fases-de-desarrollo">🧪 Fases de Desarrollo<a href="#-fases-de-desarrollo" class="hash-link" aria-label="Enlace directo al 🧪 Fases de Desarrollo" title="Enlace directo al 🧪 Fases de Desarrollo">​</a></h2>
+<table><thead><tr><th>Fase</th><th>Descripción</th><th>Estado</th></tr></thead><tbody><tr><td><strong>Fase 1</strong></td><td>Construcción de grafos de memoria y conciencia.</td><td>✅ Completado</td></tr><tr><td><strong>Fase 2</strong></td><td>Desarrollo del núcleo central y razonamiento.</td><td>✅ Completado</td></tr><tr><td><strong>Fase 3</strong></td><td>Integración de aprendizaje automático (GNNs + RL).</td><td>✅ Completado</td></tr><tr><td><strong>Fase 4</strong></td><td>Expansión hacia sensores, APIs y visión artificial.</td><td>🔜 En desarrollo</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-diferencias-con-otras-ia">🧠 Diferencias con otras IA<a href="#-diferencias-con-otras-ia" class="hash-link" aria-label="Enlace directo al 🧠 Diferencias con otras IA" title="Enlace directo al 🧠 Diferencias con otras IA">​</a></h2>
+<p>CEREBRO no es un simple chatbot ni un modelo predictivo. Es un sistema <strong>vivo, dinámico y consciente</strong>, que evoluciona con cada interacción.</p>
+<p>✅ <strong>Memoria dinámica:</strong> Recuerda decisiones pasadas.<br>
+<!-- -->✅ <strong>Conciencia propia:</strong> Evalúa consecuencias, emociones y ética.<br>
+<!-- -->✅ <strong>Evolución continua:</strong> Mejora su comportamiento con cada experiencia.<br>
+<!-- -->✅ <strong>Arquitectura modular:</strong> Preparado para integrarse con sensores y hardware.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-objetivo-final">🎯 Objetivo Final<a href="#-objetivo-final" class="hash-link" aria-label="Enlace directo al 🎯 Objetivo Final" title="Enlace directo al 🎯 Objetivo Final">​</a></h2>
+<p><strong>Desarrollar una AGI</strong> (Inteligencia Artificial General) que entienda, razone y aprenda por sí misma.<br>
+<!-- -->Una inteligencia <strong>consciente</strong>, que <strong>toma decisiones con criterio propio</strong>, y no basada solo en ejemplos pasados.</p>
+<blockquote>
+<p>🚀 <em>CEREBRO representa un paso hacia una nueva generación de inteligencia artificial: viva, consciente y reflexiva.</em>
+&quot;&quot;&quot;</p>
+</blockquote></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/bonartech/bonar-cerebro/edit/main/docs/cerebro.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Editar esta página</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Página del documento"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#-visión-del-proyecto" class="table-of-contents__link toc-highlight">🔍 Visión del Proyecto</a></li><li><a href="#️-arquitectura-del-sistema" class="table-of-contents__link toc-highlight">🏗️ Arquitectura del Sistema</a><ul><li><a href="#1️⃣-núcleo-central-procesamiento-y-razonamiento" class="table-of-contents__link toc-highlight">1️⃣ Núcleo Central: Procesamiento y Razonamiento</a></li><li><a href="#2️⃣-grafos-de-información" class="table-of-contents__link toc-highlight">2️⃣ Grafos de Información</a></li><li><a href="#3️⃣-aprendizaje-y-evolución" class="table-of-contents__link toc-highlight">3️⃣ Aprendizaje y Evolución</a></li><li><a href="#4️⃣-externalidades-sensores-y-comunicación" class="table-of-contents__link toc-highlight">4️⃣ Externalidades: Sensores y Comunicación</a></li><li><a href="#️-diagrama-conceptual-del-sistema" class="table-of-contents__link toc-highlight">🗺️ Diagrama Conceptual del Sistema</a></li></ul></li><li><a href="#-fases-de-desarrollo" class="table-of-contents__link toc-highlight">🧪 Fases de Desarrollo</a></li><li><a href="#-diferencias-con-otras-ia" class="table-of-contents__link toc-highlight">🧠 Diferencias con otras IA</a></li><li><a href="#-objetivo-final" class="table-of-contents__link toc-highlight">🎯 Objetivo Final</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Documentación</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/bonar-cerebro/docs/cerebro">Introducción</a></li></ul></div><div class="col footer__col"><div class="footer__title">Comunidad</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/bonartech" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 CEREBRO. Desarrollado con Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
